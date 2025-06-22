@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accès sécurisé</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Accès sécurisé</h2>
+        <p>Cette page est protégée par mot de passe</p>
+    </div>
+    <script>
+        var password = prompt("Entrez le mot de passe :");
+        if (password !== "ouicare2025") {
+            alert("Mot de passe incorrect.");
+            window.location.href = "https://google.com";
+        } else {
+            window.location.href = "https://sites.google.com/view/ton-site-ouicare"; // Remplace ce lien
+        }
+    </script>
+</body>
+</html>
